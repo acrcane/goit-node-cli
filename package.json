@@ -1,0 +1,24 @@
+{
+  "name": "goit-node-cli",
+  "version": "1.0.0",
+  "description": "CLI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acrcane/goit-node-cli.git"
+  },
+  "author": "Cartman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acrcane/goit-node-cli/issues"
+  },
+  "homepage": "https://github.com/acrcane/goit-node-cli#readme",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "uuidv4": "^6.2.13"
+  }
+}
