@@ -34,18 +34,19 @@ async function getContactById(id) {
 
 async function removeContact(contactId) {
     const data = await read();
-
     const index = data.findIndex((contact) => contact.id === contactId);
 
     if (index === -1) {
         return null;
     }
 
+    const deletedContact = data[index]
+
     const newContacts = [...data.slice(0, index), ...data.slice(index + 1)];
 
     await write(newContacts);
 
-    return data[index];
+    return deletedContact
 }
 
 
@@ -65,6 +66,7 @@ async function addContact(name, email, phone) {
     await write(data);
 
     return newContact;
+    
 }
 
 module.exports = {

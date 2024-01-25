@@ -50,6 +50,7 @@ async function invokeAction({ action, id, name, email, phone }) {
     case "remove":
       try {
         const removedContact = await removeContact(id)
+        console.log('User successfully deleted');
       } catch (error) {
         console.error(`error ${error}`)
       }
