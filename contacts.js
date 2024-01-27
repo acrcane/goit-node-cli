@@ -46,7 +46,7 @@ async function removeContact(contactId) {
 
     await write(newContacts);
 
-    return deletedContact
+    return deletedContact 
 }
 
 
